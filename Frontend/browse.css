@@ -1,0 +1,38 @@
+/*/* can somebody addddddd colour 
+and shapeeeee yuhh */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .card h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .card .looking-for {
+    font-size: 0.8rem;
+    color: #666;
+  }

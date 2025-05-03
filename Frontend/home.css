@@ -20,6 +20,7 @@ body {
     overflow: hidden;
     border-radius: 0 0 8px 8px;
     padding: 10px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .topnav a {
@@ -28,7 +29,7 @@ body {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.7rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -51,25 +52,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 20rem;
     border-radius: 8px;
 
 }
 
 .hero-text {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 8px;
     color: #333;
     max-width: 80%;
-}
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #fcf6bd;
+    text-shadow: 2px 2px 0 #9129b1;
+    text-align: center;
+    }
+
 
 .hero-text h1 {
     font-size: 3.5rem; /* Increased font size */
     color: #ff9ec5;
     margin-bottom: 0.5rem;
     font-weight: 600;
+}
+
+.hero-text p{
+    text-shadow: none;
+    font-weight: lighter;
+    font-size: 30px;
 }
 
 
@@ -79,7 +91,7 @@ body {
     padding: 2rem;
     background-color: #fff;
     border-radius: 8px;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,6 +100,7 @@ body {
     color: #ff9ec5;
     margin-bottom: 1rem;
     font-weight: 600;
+    background-color: #9129b1;
 }
 
 .chat-section p {

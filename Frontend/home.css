@@ -73,7 +73,7 @@ body {
 
 
 .hero-text h1 {
-    font-size: 3.5rem; /* Increased font size */
+    font-size: 4.5rem; /* Increased font size */
     color: #ff9ec5;
     margin-bottom: 0.5rem;
     font-weight: 600;
@@ -90,10 +90,12 @@ body {
 .chat-section {
     text-align: center;
     padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
+    color: rgba(186, 95, 219, 0.9);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5rem;
+    margin-left: -900px;
     margin-bottom: 7rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: -90px;
 }
 
 .chat-section h2 {

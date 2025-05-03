@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
+<title>Upload</title>
+</head>
+<body>
+    <div class="hero">
+        <label for="input-file" id="drop-area" >
+            <input type="file" accept="image/*" id="input-file"  hidden>
+            <div id="img-view">
+                <img src="assests/upload.png">
+                <p>Drag and drop, or click here<br> to upload image</p>
+                <span>Upload image of photocard</span>
+            </div>
+        </label>
+    </div>
+    <form action="/action_page.php">
+        <label for="iname">Idol Name</label>
+        <input type="text" id="iname" name="idolname" placeholder="Who is in the photocard">
+
+        <label for="gname">Group Name</label>
+        <input type = "text" id="gname" name="groupname" placeholder="What group is it?">
+
+        <label for="set">Set Name</label>
+        <input type = "text" id="set" name="setname" placeholder="What set is it?">
+
+        <input type="submit" value="Submit">
+       
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

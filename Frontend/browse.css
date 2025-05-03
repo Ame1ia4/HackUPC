@@ -1,5 +1,3 @@
-/*/* can somebody addddddd colour 
-and shapeeeee yuhh */
 
 .grid-container {
     display: grid;
@@ -8,7 +6,7 @@ and shapeeeee yuhh */
     padding: 2rem;
   }
   
-  .card {
+  .card1 {
     background: #fff;
     border-radius: 8px;
     padding: 1rem;
@@ -16,23 +14,452 @@ and shapeeeee yuhh */
     text-align: center;
   }
   
-  .card img {
+  .card1 img {
     width: 100%;
     height: auto;
     border-radius: 4px;
   }
   
-  .card h3 {
+  .card1 h3 {
     margin-top: 0.5rem;
     font-size: 1rem;
   }
   
-  .card p {
+  .card1 p {
     margin: 0.25rem 0;
     font-size: 0.9rem;
   }
   
-  .card .looking-for {
+  .card1 .looking-for {
     font-size: 0.8rem;
     color: #666;
   }
+  
+  /* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#c781e0,#ff9ec5);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top Navigation Bar */
+.topnav {
+  background-color: rgba(199, 129, 224, 0.9);
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  padding: 10px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 0 #9129b1;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topnav a:hover {
+  background-color: rgba(255, 158, 197, 0.8);
+  color: #fff;
+}
+
+.topnav a.active {
+  background-color: #c781e0;
+  color: #fff;
+}
+
+/* Hero Image Section */
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%; /* Make it full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rem;
+  border-radius: 8px;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  max-width: 80%;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3rem;
+  color: #fcf6bd;
+  text-shadow: 2px 0px #9129b1;
+  text-align: center;
+  }
+
+
+.hero-text h1 {
+  font-size: 4.5rem; /* Increased font size */
+  color: #ff9ec5;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.hero-text p{
+  text-shadow: none;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+
+/* Chat with Trader Section */
+.chat-section {
+  text-align: center;
+  padding: 2rem;
+  color: #b33abe;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4.5rem;
+  margin-left: -630px;
+  margin-bottom: 5rem;
+  margin-top: -90px;
+}
+
+.chat-section h2 {
+  color: #ff9ec5;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  background-color: #9129b1;
+}
+
+.chat-p {
+color: #f0f0f0;
+font-size: 2.0rem;  
+font-family: 'Luckiest Guy', cursive;
+margin-left: -110px;
+margin-top: -120px;
+margin-inline-end: 500px;
+}
+
+.search-section {
+  text-align: center;
+  padding: 2rem;
+  color: #fcf6bd;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4.5rem;
+  margin-left: -900px;
+  margin-bottom: -20rem;
+  margin-top: -320px;
+}
+
+.search-section h2 {
+  color: #ff9ec5;
+  font-weight: 600;
+  background-color: #9129b1;
+}
+
+.search-p {
+color: #fff;
+font-size: 2rem;  
+font-family: 'Luckiest Guy', cursive;
+margin-left: -31rem;
+margin-top: 280px;
+margin-inline-end: 7px;
+}
+
+/* Picture Card Carousel Section */
+.carousel-section {
+  padding: 2rem 0;
+}
+
+.carousel-section h2 {
+  font-size: 3.8rem;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 2px 0 #f33e86;
+  color: #fcf6bd;
+  text-align: center;
+  margin-top: -740px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-item {
+  flex: 0 8 auto;
+  width: 200px;
+  height: 250px;
+  margin-right: 1rem;
+  border-radius: 8px;
+  background-image: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #888;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+  margin-top: 80px;
+  height: 390px;
+  text-decoration: none;
+  flex-shrink: 0; 
+  width: 256px; 
+  background-color: #fff;
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  color: #718096; 
+}
+
+.carousel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+
+/* Footer */
+footer {
+  background-color: #ffd2d3;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 2px solid #ff9ec5;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .topnav a {
+      float: none;
+      display: block;
+      text-align: center;
+  }
+  .hero-text h1 {
+      font-size: 2rem;
+  }
+  .hero-image{
+      height: 200px;
+  }
+  .carousel-item {
+      width: 180px;
+      height: 220px;
+  }
+}
+
+#speech {
+width: 200px;
+height: 200px;
+margin-top: -190px;
+margin-bottom: 700px;
+margin-left: 1000px;
+background-position-x: 30%;
+}
+
+#search {
+  width: 400px;
+  height: 900px;
+  margin-top: -500px;
+  margin-bottom: 700px;
+  margin-left: 900px;
+  background-position-x: 30%;
+  }
+
+#cloud{
+  position: absolute;
+  opacity: 89%;
+  width: 300px;
+  height: 300px;
+  margin-top: -80px;
+  margin-left: 400px;
+  background-position-x: 30%;
+}
+
+#cloud2{
+position: absolute;
+opacity: 87%;
+width: 300px;
+height: 300px;
+margin-top: -80px;
+margin-left: -660px;
+background-position-x: 30%;
+}
+
+#cloud3{
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  margin-top: -200px;
+  margin-left: 600px;
+  background-position-x: 70%;
+  }
+  
+#cloud4{
+position: absolute;
+width: 450px;
+height: 450px;
+margin-top: -200px;
+margin-left: -1000px;
+background-position-x: 70%;
+}
+
+#cloud5{
+  position: absolute;
+  opacity: 90%;
+  width: 200px;
+  height: 300px;
+  margin-top: -470px;
+  margin-left: 90px;
+  background-position-x: 30%;
+}
+
+#cloud6{
+  position: absolute;
+  opacity: 90%;
+  width: 200px;
+  height: 300px;
+  margin-top: -370px;
+  margin-left: -750px;
+  background-position-x: 30%;
+}
+
+#stars{
+  position: absolute;
+  width: 170px;
+  height: 80px;
+  margin-top: -300px;
+  margin-left: -360px;
+  background-position-x: 30%;
+}
+
+#stars2 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin-left: 600px;
+  margin-top: -200px;
+  background-position-x: 30%;
+}
+
+#cards{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin-left: -520px;
+  margin-top: -260px;
+  background-position-x: 30%;
+}
+
+#cards2{
+  position: absolute;
+  opacity: 98%;
+  width: 90px;
+  height: 90px;
+  margin-left: 370px;
+  margin-top: -120px;
+  background-position-x: 30%;
+}
+
+
+#chess{
+  position: absolute;
+  width: 100%;
+  margin-top: -1760px;
+  margin-left: -960px;
+  background-position-x: -40%;
+  z-index: -1;
+}
+
+#flowers {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  margin-top: -510px;
+  margin-left: -460px;
+  background-position-x: 30%; 
+  z-index: -2;
+  opacity: 20%;
+}
+
+#flowers2 {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  margin-top: -510px;
+  margin-left: 960px;
+  background-position-x: 30%; 
+  z-index: -2;
+  opacity: 20%;
+}
+
+#confetti {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  margin-top: -410px;
+  margin-left: 660px;
+  background-position-x: 30%; 
+  z-index: -2;
+  opacity: 20%;
+}
+
+#confetti2 {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  margin-top: -410px;
+  margin-left: -660px;
+  background-position-x: 30%; 
+  z-index: -2;
+  opacity: 20%;
+}
+
+#card-image {
+border-radius: 0.5rem;
+}
+
+input[type=text] {
+    width: auto;
+    padding: 10px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+}

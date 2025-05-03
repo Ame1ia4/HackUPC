@@ -65,17 +65,27 @@ img {
     margin-top: 15px;
 }
 
-  input[type=text], select {
-    width: 60%; 
-    max-width: 400px;
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: 10px 0;
+  }
+  
+  .form-group label {
+    width: 150px;            
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .form-group input[type=text],
+  .form-group select {
+    width: 50%;              
     padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
+  }
 /* Style the submit button */
 input[type=submit] {
   width: 15%;
@@ -103,7 +113,7 @@ input[type=submit]:hover {
     background: none;
     padding: 15px;
     border-radius: 20px;
-    border: 2px dashed rgba(255, 255, 255, 0.3);
+    
 }
 .bubble-text {
     font-family: 'Luckiest Guy', cursive;
@@ -112,4 +122,11 @@ input[type=submit]:hover {
     text-shadow: 2px 2px 0 #484747;
     text-align: center;
     letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+form label {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    color: #000000;
 }

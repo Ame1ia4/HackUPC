@@ -1,16 +1,13 @@
 body, html {
-
-    height: 100%
-
-     
-
-}
-
-body{
-
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     background: linear-gradient(#c781e0, #ff9ec5);
 
 }
+
 
 .viewprofile{
 

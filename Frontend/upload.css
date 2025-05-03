@@ -1,3 +1,13 @@
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(#c781e0, #ff9ec5);
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -58,7 +68,6 @@ img {
     margin-top: 15px;
 }
 
-* Style inputs */
   input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -84,4 +93,12 @@ input[type=submit] {
 /* Add a background color to the submit button on mouse-over */
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+.formarea {
+    background-color: transparent;
+    background: none;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
 }

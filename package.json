@@ -1,0 +1,24 @@
+{
+  "name": "hackupc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "live-server Frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ame1ia4/HackUPC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ame1ia4/HackUPC/issues"
+  },
+  "homepage": "https://github.com/Ame1ia4/HackUPC#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

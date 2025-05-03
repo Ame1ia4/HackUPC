@@ -23,7 +23,7 @@
 
     <!-- Form Container -->
     <div class="form-container">
-        <form action="action_page.php" style="border:1px solid #ccc">
+        <form id="register-form" style="border:1px solid #ccc">
             <div class="container">
                 <div class="intro">
                     <h1 class="bubble-text">Register Account</h1>
@@ -72,5 +72,39 @@
             </div>
         </form>
     </div>
+
+    <script>
+
+        document.getElementById("register-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+    
+            const form = e.target;
+    
+            const data = {
+                username: form.username.value,           // 'username' input
+                email: form.email.value,                 // 'email' input
+                password: form.psw.value,                // 'password' input
+                address: {
+                    addressLine1: form.addressone.value, // 'addressone' input
+                    addressLine2: form.addresstwo.value, // 'addresstwo' input
+                    city: form.region.value,            // 'region' input
+                    postcode: form.postcode.value,      // 'postcode' input
+                    country: "UK"                       
+                }
+            };
+    
+            fetch("http://localhost:8080/api/users/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.text()) 
+            .then(msg => alert(msg))            
+            .catch(err => alert("Error: " + err));
+        });
+        </script>
+
 </body>
 </html>

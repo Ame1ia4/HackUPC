@@ -55,7 +55,6 @@ body {
     align-items: center;
     margin-bottom: 20rem;
     border-radius: 8px;
-
 }
 
 .hero-text {
@@ -67,7 +66,7 @@ body {
     font-family: 'Luckiest Guy', cursive;
     font-size: 3rem;
     color: #fcf6bd;
-    text-shadow: 2px 2px 0 #9129b1;
+    text-shadow: 0px 0px 0px 0px #9129b1;
     text-align: center;
     }
 
@@ -202,5 +201,22 @@ footer {
 width: 200px;
 height: 200px;
 margin-left: 1000px;
+background-position-x: 30%;
+}
+
+#cloud{
+position: absolute;
+width: 200px;
+height: 170px;
+margin-left: 600px;
+margin-top: -120px;
+background-position-x: 30%;
+}
+
+#cloud2{
+position: absolute;
+width: 200px;
+height: 200px;
+margin-left: -200px;
 background-position-x: 30%;
 }

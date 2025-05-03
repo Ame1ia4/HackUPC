@@ -1,5 +1,7 @@
 package com.photocard.photocard_backend;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -14,7 +16,8 @@ public class LookingFor {
     private String imagePath;      // optional (for full specific match)
 
     @ManyToOne
-    @JoinColumn(name = "photocard_id") // foreign key to Photocard
+    @JoinColumn(name = "photocard_id")
+    @JsonBackReference
     private Photocard sourceCard;
 
     // Getters and setters

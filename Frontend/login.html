@@ -12,7 +12,7 @@
         <a class="active" href="login.html">Log In</a>
         <a href="signup.html">Sign Up</a>
     </div>
-    <form action="action_page.php" method="post">
+    <form id="loginForm">
         <div class="comtainer">
             <label for="uname" id="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
@@ -32,9 +32,42 @@
             <span class="psw">Forgot<a href="#"> password?</a></span>
         </div>
     </form>
-  
 
+    <script>
+        document.querySelector('.logIn').addEventListener('click', async function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            const username = document.querySelector('[name="uname"]').value;
+            const password = document.querySelector('[name="psw"]').value;
     
-
+            const loginData = {
+                username: username,
+                password: password
+            };
+    
+            try {
+                const response = await fetch('http://localhost:8080/api/users/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(loginData)
+                });
+    
+                if (response.ok) {
+                    // Successfully logged in
+                    alert('Login successful!');
+                    window.location.href = 'index.html'; // Redirect to homepage
+                } else {
+                    // Invalid username or password
+                    alert('Invalid username or password');
+                }
+            } catch (error) {
+                alert('An error occurred. Please try again.');
+                console.error('Error during login:', error);
+            }
+        });
+    </script>
+    
 </body>
 </html>

@@ -27,6 +27,7 @@ body {
     float: left;
     color: #fff;
     text-align: center;
+    text-shadow: 2px 2px 0 #9129b1;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 1.7rem;
@@ -47,7 +48,7 @@ body {
 .hero-image {
     background-size: cover;
     background-position: center;
-    height: 900px;
+    height: 650px;
     width: 100%; /* Make it full viewport height */
     display: flex;
     justify-content: center;

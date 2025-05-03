@@ -2,53 +2,75 @@
 <html>
 <head>
     <link rel="stylesheet" href="signup.css">
-    <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
-<title>Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
 </head>
-<body>
-    <div class="topnav">
+
+<body class="bg-fcf6bd">
+    <!-- Navigation Bar -->
+    <header class="topnav">
         <a href="index.html">Home</a>
         <a href="login.html">Log In</a>
         <a class="active" href="signup.html">Sign Up</a>
+    </header>
+
+    <!-- Star Background -->
+    <div class="stars-wrapper">
+        <!-- Stars will be dynamically styled with CSS -->
     </div>
-    <form action="action_page.php" style="border:1px solid #ccc">
-        <div class="container">
-            <h1>Register Account</h1>
-            <p>Please complete this form to create an account</p>
-            <hr>
 
+    <!-- Form Container -->
+    <div class="form-container">
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <div class="intro">
+                    <h1 class="bubble-text">Register Account</h1>
+                    <p class="bubblewords">Please complete this form to create an account</p>
+                </div>
 
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="fullname"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter your full name" name="fullname" required>
+                
+                <label for="email"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
 
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <label>Address Line One</label>
+                <input type="text" placeholder="Address Line One" name="addressone" required>
+                
+                <label>Address Line Two</label>
+                <input type="text" placeholder="Address Line Two" name="addresstwo" required>
 
+                <label>Apartment No/ Building No</label>
+                <input type="text" placeholder="Building No" name="buildingno">
 
-            <label>
-                <input type="checkbox" checked="checked" name="remeber" style="margin-bottom: 15px"> Remember Me
-            </label>
+                <label>City/Region</label>
+                <input type="text" placeholder="Region" name="region" required>
+                
+                <label>Post Code</label>
+                <input type="text" placeholder="Postcode" name="postcode" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px"> Remember Me
+                </label>
 
-
-            <p>By Creating an account, you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-           
-            <div class="clearfix">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <p>By creating an account, you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+               
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
             </div>
-        </div>
-    </form>
-
-
-
-
-
-    
-
+        </form>
+    </div>
 </body>
 </html>

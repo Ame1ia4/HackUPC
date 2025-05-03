@@ -7,4 +7,25 @@ body, html{
     background: linear-gradient(#c781e0, #ff9ec5);
 }
 
+.bubble-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #fcf6bd;
+    text-shadow: 2px 2px 0 #484747;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.info-view {
+    background-color: #fff0f6;       
+    border: 2px solid #ff85a2;       
+    padding: 15px 20px;              
+    border-radius: 12px;             
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
 

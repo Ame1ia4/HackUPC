@@ -1,5 +1,66 @@
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body, html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#c781e0, #ff9ec5);
+    overflow-y: auto;
+}
+
+/* Starry Background */
+.stars-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 2px, transparent 3px) repeat;
+    background-size: 30px 30px;
+    pointer-events: none; /* Ensure stars don't interfere with interactions */
+    z-index: -1; /* Push the background below all other content */
+}
+
+.bubble-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #484747;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.bubblewords {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #484747;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+    color: rgb(113, 113, 113);
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Form Styling */
+.container label {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    color: #fcf6bd;
+    text-shadow: 2px 2px 0 #484747;
+    text-align: center;
+    letter-spacing: 3px;
+}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -8,21 +69,18 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    border-radius: 10px;
 }
-
 
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
+    border-radius: 10px;
 }
 
-
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
+/* Button Styling */
 button {
-    background-color: #ff4bed;
+    background-color: #a1ffde;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -30,52 +88,67 @@ button {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0 #484747;
+    text-align: center;
 }
+
 button:hover {
-    opacity:1;
+    opacity: 1;
 }
+
 .cancelbtn {
-    padding: 14px 20px;
-    background-color: #e436f4;
+    background-color: #5df1bd;
 }
+
 .cancelbtn, .signupbtn {
     float: left;
     width: 50%;
 }
+
 .container {
     padding: 16px;
- }
- .clearfix::after {
+}
+
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
+
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
-      width: 100%;
+        width: 100%;
     }
 }
 
+/* Navigation Bar */
 .topnav {
-    background-color: #ff03ab;
+    background-color: rgba(199, 129, 224, 0.9);
     overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .topnav a {
     float: left;
-    color: #000000;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    text-shadow: 2px 2px 0 #9129b1;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.7rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .topnav a:hover {
-    background-color: #f938b8;
-    color: black;
+    background-color: rgba(255, 158, 197, 0.8);
+    color: #fff;
 }
 
-.topnav a.active{
-    background-color: #fb46bf;
-    color: #ffffff;
+.topnav a.active {
+    background-color: #c781e0;
+    color: #fff;
 }

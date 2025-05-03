@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 public class Photocard {
 
@@ -19,6 +21,7 @@ public class Photocard {
     private LocalDateTime uploadedAt;
 
     @OneToMany(mappedBy = "sourceCard", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<LookingFor> lookingForList = new ArrayList<>();
 
     // Getters and setters

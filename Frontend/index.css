@@ -122,7 +122,7 @@ body {
     font-size: 4.5rem;
     margin-left: -900px;
     margin-bottom: -20rem;
-    margin-top: -90px;
+    margin-top: -320px;
 }
 
 .search-section h2 {
@@ -151,7 +151,7 @@ body {
     text-shadow: 2px 0 #f33e86;
     color: #fcf6bd;
     text-align: center;
-    margin-top: -600px;
+    margin-top: -740px;
     margin-bottom: 1.5rem;
     font-weight: 600;
 }
@@ -184,7 +184,6 @@ body {
     margin-top: 80px;
     height: 390px;
     text-decoration: none;
-    background-image: url('./images/ateez.jpg');
     flex-shrink: 0; 
     width: 256px; 
     background-color: #fff;

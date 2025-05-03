@@ -1,23 +1,61 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Photocard Trading</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="home.css">
-    <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
-<title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <div class="topnav">
-        <a class="active" href="home.html">Home</a>
+<body class="bg-fcf6bd"> 
+    <header class="topnav">
+        <a class="active" href="index.html">Home</a>
         <a href="login.html">Log In</a>
         <a href="signup.html">Sign Up</a>
-    </div>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Welcome to this nameless website</h1>
-        </div>
-    </div>
+    </header>
 
+    <main class="container mx-auto px-4 py-8">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to this nameless website</h1>
+            </div>
+        </div>
+
+        <section class="text-center py-6">
+            <h2 class="text-xl font-semibold text-ff9ec5">Chat with Trader</h2> <p class="text-gray-700 mt-2">Connect with other fans to trade your favorite Kpop photocards!</p>
+        </section>
     
 
+        <section class="py-6">
+            <h2 class="text-xl font-semibold text-a1ffde text-center mb-4">Picture Card Carousel</h2> <div class="flex overflow-x-auto space-x-4 p-4">
+                <div class="card flex-shrink-0 w-64 h-40 bg-white rounded-lg shadow-md flex items-center justify-center">
+                    <span class="text-gray-500">Card 1</span>
+                </div>
+                <div class="card flex-shrink-0 w-64 h-40 bg-white rounded-lg shadow-md flex items-center justify-center">
+                    <span class="text-gray-500">Card 2</span>
+                </div>
+                <div class="card flex-shrink-0 w-64 h-40 bg-white rounded-lg shadow-md flex items-center justify-center">
+                    <span class="text-gray-500">Card 3</span>
+                </div>
+                 <div class="card flex-shrink-0 w-64 h-40 bg-white rounded-lg shadow-md flex items-center justify-center">
+                    <span class="text-gray-500">Card 4</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-ffd2d3 text-gray-800 text-center py-3 rounded-t-lg shadow-md">
+         <p>&copy; 2024 Kpop Photocard Trading Community</p>
+    </footer>
 </body>
 </html>

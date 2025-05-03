@@ -8,21 +8,41 @@ body, html {
 
 }
 
-
-.viewprofile{
-
-    display: flex;
-
-    flex-direction: row;
-
-    gap: 10px;
-
-    border-radius: 5px;
-
-    border: 2px dashed #ffd2d3;
-
+h3 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
+
+.viewprofile{
+    width: 100%;
+    border: 2px dashed #ffd2d3;
+    border-radius: 5px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.profile-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+}
+.profile-content button{
+    width: auto;
+    height: 35px;
+    padding: 5px 8px;
+    background-color: #ff9ec5;
+    border: none;
+    align-self: center;
+    border-radius: 20px;
+   
+}
 .avatar {
 
     vertical-align: middle;
@@ -34,79 +54,81 @@ body, html {
     border-radius: 50%;
 
     border:  #000;
-
+    margin-right: 15px;
 }
 
 .pclist {
-
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
     max-width: 300px;
-
     max-height: 500px;
-
     margin: auto;
-
     text-align: center;
-
     font-family: arial;
-
     background: #ffd2d3;
-
     border-radius: 20px;
-
-    padding: 20px;
-
+    padding: 5px;
     box-sizing: border-box;
-
     overflow: hidden;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
-
 }
+
+.pclist img {
+    width: 100px;
+    height: 350px;
+}
+
+.pclist h1{
+    font-size: 16px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.pclist p {
+    font-size: 12px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.pclist h1,
+.pclist h2,
+.pclist h3,
+.pclist p,
+.pclist span {
+    margin: 4px 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.bubble-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #fcf6bd;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a1ffde;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self: center;
+   
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;  
+  }
 
  
 
-.price {
-
-    color: grey;
-
-    font-size: 22px;
-
-}
-
- 
-
-.pclist button {
-
-    border: none;
-
-  outline: 0;
-
-  padding: 12px;
-
-  color: white;
-
-  background-color: #000;
-
-  text-align: center;
-
-  cursor: pointer;
-
-  width: 100%;
-
-  font-size: 14px;
-
-}
-
- 
-
-.pclist button:hover {
-
-    opacity: 0.7;
-
-}

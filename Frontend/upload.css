@@ -17,8 +17,7 @@ body{
 
 .hero{
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(#c572f1, #c2b6d9);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +25,7 @@ body{
 
 #drop-area{
     width: 500px;
-    min-height: 300px;
+    height: 300px;
     padding: 30px;
     background: #fff;
     text-align: center;
@@ -101,4 +100,12 @@ input[type=submit]:hover {
     padding: 20px;
     border-radius: 20px;
     border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+.bubble-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #fcf6bd;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+    letter-spacing: 2px;
 }

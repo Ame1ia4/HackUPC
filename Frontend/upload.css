@@ -1,3 +1,13 @@
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(#c781e0, #ff9ec5);
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +17,6 @@
 
 .hero{
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(#c572f1, #c2b6d9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +24,7 @@
 
 #drop-area{
     width: 500px;
-    min-height: 300px;
-    padding: 30px;
+    height: auto;
     background: #fff;
     text-align: center;
     border-radius: 20px;
@@ -58,7 +65,6 @@ img {
     margin-top: 15px;
 }
 
-* Style inputs */
   input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -84,4 +90,20 @@ input[type=submit] {
 /* Add a background color to the submit button on mouse-over */
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+.formarea {
+    background-color: transparent;
+    background: none;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+.bubble-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #fcf6bd;
+    text-shadow: 2px 2px 0 #484747;
+    text-align: center;
+    letter-spacing: 2px;
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
+<title>Log In</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a class="active" href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+    <form action="action_page.php" method="post">
+        <div class="comtainer">
+            <label for="uname"><b>Usernam</b></label>
+            <input type="text" placeholder="Enter USername" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remeber">
+                Remember me
+            </label> 
+        </div>
+        
+        <div class="container" style="background-color: #f1f1f1">
+            <button type=""button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot<a href="#">password?</a></span>
+        </div>
+    </form>
+  
+
+    
+
+</body>
+</html>

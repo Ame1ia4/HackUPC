@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="login.css">
     <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 <title>Log In</title>
 </head>
 <body>
@@ -13,13 +14,13 @@
     </div>
     <form action="action_page.php" method="post">
         <div class="comtainer">
-            <label for="uname"><b>Usernam</b></label>
-            <input type="text" placeholder="Enter USername" name="uname" required>
+            <label for="uname" id="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
 
-            <label for="psw"><b>Password</b></label>
+            <label for="psw" id="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" class="logIn">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remeber">
                 Remember me
@@ -27,8 +28,8 @@
         </div>
         
         <div class="container" style="background-color: #f1f1f1">
-            <button type=""button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot<a href="#">password?</a></span>
+            <button class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot<a href="#"> password?</a></span>
         </div>
     </form>
   

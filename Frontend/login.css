@@ -1,48 +1,155 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#c781e0, #ff9ec5);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 0px;
+    margin: 0 auto;
+    margin-left: 402px;
+    padding: 0 0px;
+}
+
+/* Top Navigation Bar */
 .topnav {
-    background-color: #ff03ab;
+    background-color: rgba(199, 129, 224, 0.9);
     overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
 }
 
 .topnav a {
     float: left;
-    color: #000000;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    text-shadow: 2px 2px 0 #9129b1;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.7rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .topnav a:hover {
-    background-color: #f938b8;
-    color: black;
+    background-color: rgba(255, 158, 197, 0.8);
+    color: #fff;
 }
 
-.topnav a.active{
-    background-color: #fb46bf;
-    color: #ffffff;
+.topnav a.active {
+    background-color: #c781e0;
+    color: #fff;
+}
+
+/* Search Bar Styles */
+.topnav input[type="text"] {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    background-color: #fff;
+    color: #333;
+}
+
+.topnav input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 158, 197, 1);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .topnav input[type="text"] {
+        position: static;
+        transform: translateY(0);
+        margin: 8px auto;
+        width: 100%;
+    }
+
+    .topnav {
+        flex-direction: column;
+    }
+
+    .carousel {
+        padding: 0;
+    }
 }
 
 form {
-    border: 3px solid #f1f1f1;
+    width: 900px;
+    margin-left: 450px;
+    padding: 200px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+ 
+#uname {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 40px;
+    padding: 8px 10px;
+    display: inline-block;
+    width: auto;
 }
 
-input[type=text], input[type=password]{
-    width: 100%;
-    padding:12px 20px;
-    margin: 8px 0;
+#psw {
+    color: #ffffff;
+    margin-left: 0;
+    margin-right: 25px;
+    display: inline-block;
+    font-size: 40px;
+    padding: 8px 10px;
+    width: auto;
+}
+
+input[type=text],
+input[type=password] {
+    width: auto;
+    padding: 10px;
+    margin: 8px 10px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 40px;
+    border-radius: 8px;
 }
 
 button {
     background-color: #04AA6D;
     color: white;
-    padding:14px 20px;
-    margin: 8px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: auto;
+    padding: 10px 20px;
+    margin: 20px auto 0; /* Changed margin-bottom to 0 */
+    margin-left: 280px;
+    margin-top: 60px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    border-radius: 25px;
+    display: block;
+    text-align: center;margin-bottom: 30px;
+
 }
 
 button:hover {
@@ -50,23 +157,24 @@ button:hover {
 }
 
 .cancelbtn {
-    width: auto;
     padding: 10px 18px;
     background-color: #f44336;
+    margin-top: 20px;
+    margin-left: -125px;
+    margin-bottom: 0; /* Added margin-bottom: 0; to remove extra space */
 }
-.container {
-    padding: 16px;
-}
+
+
+
 span.psw {
-    float: right;
+    margin-left: 0px;
     padding-top: 16px;
 }
+
 @media screen and (max-width: 300px) {
     span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
+        display: block;
+        float: none;
     }
 }
+

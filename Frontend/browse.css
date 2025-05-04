@@ -251,18 +251,6 @@ margin-inline-end: 7px;
   background: #aaa;
 }
 
-
-/* Footer */
-footer {
-  background-color: #ffd2d3;
-  color: #333;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  border-top: 2px solid #ff9ec5;
-  border-radius: 8px 8px 0 0;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .topnav a {
@@ -282,23 +270,7 @@ footer {
   }
 }
 
-#speech {
-width: 200px;
-height: 200px;
-margin-top: -190px;
-margin-bottom: 700px;
-margin-left: 1000px;
-background-position-x: 30%;
-}
 
-#search {
-  width: 400px;
-  height: 900px;
-  margin-top: -500px;
-  margin-bottom: 700px;
-  margin-left: 900px;
-  background-position-x: 30%;
-  }
 
 #cloud{
   position: absolute;
@@ -427,27 +399,6 @@ background-position-x: 70%;
   opacity: 20%;
 }
 
-#confetti {
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  margin-top: -410px;
-  margin-left: 660px;
-  background-position-x: 30%; 
-  z-index: -2;
-  opacity: 20%;
-}
-
-#confetti2 {
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  margin-top: -410px;
-  margin-left: -660px;
-  background-position-x: 30%; 
-  z-index: -2;
-  opacity: 20%;
-}
 
 #card-image {
 border-radius: 0.5rem;
@@ -462,4 +413,16 @@ input[type=text] {
     border-radius: 20px;
     box-sizing: border-box;
     font-size: 30px;
+    opacity: 60%;
+  }
+
+
+.search-box-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  width: 100%; /* Make the container full width */
+  padding: 20px; /* Add some padding around the search box */
+  margin-top: -290px; /* Adjust spacing below the header */
+  margin-bottom: 70px;
+
 }

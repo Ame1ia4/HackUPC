@@ -4,16 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(#c781e0, #ff9ec5);
-    color: #333;
+    color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
-}
-
-.container {
-    max-width: 0px;
-    margin: 0 auto;
-    margin-left: 402px;
-    padding: 0 0px;
 }
 
 /* Top Navigation Bar */
@@ -30,7 +23,6 @@ body {
 }
 
 .topnav a {
-    float: left;
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 0 #9129b1;
@@ -42,12 +34,10 @@ body {
 
 .topnav a:hover {
     background-color: rgba(255, 158, 197, 0.8);
-    color: #fff;
 }
 
 .topnav a.active {
     background-color: #c781e0;
-    color: #fff;
 }
 
 /* Search Bar Styles */
@@ -70,136 +60,149 @@ body {
     box-shadow: 0 0 5px rgba(255, 158, 197, 1);
 }
 
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .topnav a {
-        float: none;
-        display: block;
-        text-align: center;
-    }
-
-    .topnav input[type="text"] {
-        position: static;
-        transform: translateY(0);
-        margin: 8px auto;
-        width: 100%;
-    }
-
-    .topnav {
-        flex-direction: column;
-    }
-
-    .carousel {
-        padding: 0;
-    }
-}
-
+/* Login Form */
 form {
-    width: 900px;
-    margin-left: 450px;
-    padding: 200px;
-    margin-bottom: 70px;
-    margin-top: 20px;
-}
- 
-#uname {
-    color: #ffffff;
-    margin-right: 10px;
-    font-size: 40px;
-    padding: 8px 10px;
-    display: inline-block;
-    width: auto;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 40px;
 }
 
-#psw {
-    color: #ffffff;
-    margin-left: 0;
-    margin-right: 25px;
-    display: inline-block;
-    font-size: 40px;
-    padding: 8px 10px;
-    width: auto;
-}
-
-input[type=text],
-input[type=password] {
-    width: auto;
-    padding: 10px;
-    margin: 8px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 40px;
-    border-radius: 8px;
-    opacity: 70%;
-}
-
-button {
-    background-color: #04AA6D;
+/* Labels */
+.label {
+    font-size: 1.5rem; /* Match your design */
     color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    width: auto;
-    padding: 10px 20px;
-    margin: 20px auto 0; /* Changed margin-bottom to 0 */
-    margin-left: 280px;
-    margin-top: 60px;
-    border: none;
-    cursor: pointer;
-    border-radius: 25px;
+    margin-bottom: 5px;
     display: block;
-    text-align: center;margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Form Layout */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Buttons */
+button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+    display: block;
+    transition: opacity 0.3s ease;
 }
 
 button:hover {
     opacity: 0.8;
 }
 
-.cancelbtn {
-    padding: 10px 18px;
-    background-color: #f44336;
-    margin-top: 20px;
-    margin-left: -125px;
-    margin-bottom: -70px; /* Added margin-bottom: 0; to remove extra space */
+.logIn {
+    background-color: #04AA6D;
+    color: white;
 }
 
+.cancelbtn {
+    background-color: #f44336;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto; /* Centers the button */
+}
 
+/* Footer Section */
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
 
 span.psw {
-    margin-left: 0px;
-    padding-top: 40px;
-    margin-top: 90px;
+    font-size: 0.9rem;
 }
 
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-}
-
-#flowers {
-    position: absolute;
-    width: 900px;
-    height: 900px;
-    margin-top: -500px;
-    margin-left: -900px;
-    background-position-x: 30%; 
-    z-index: -2;
-    opacity: 20%;
-}
-
-
+/* Decorative Images */
+#flowers,
 #flowers2 {
     position: absolute;
     width: 900px;
     height: 900px;
-    margin-top: -510px;
-    margin-left: 900px;
-    background-position-x: 30%; 
     z-index: -2;
     opacity: 20%;
-  
 }
 
+#flowers {
+    top: 50px;
+    left: -200px;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+#flowers2 {
+    top: 100px;
+    right: -200px;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        display: block;
+        text-align: center;
+    }
+
+    .topnav input[type="text"] {
+        position: static;
+        margin: 8px auto;
+        width: 100%;
+        transform: none;
+    }
+
+    form {
+        margin: 50px 20px;
+        padding: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 1rem;
+    }
+}

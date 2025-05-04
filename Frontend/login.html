@@ -1,77 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="login.css">
-    <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-<title>Log In</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+
+    <!-- External Styles and Fonts -->
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" type="image/x-icon" href="assests/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
 </head>
 <body>
+    <!-- Navigation -->
     <header class="topnav">
         <a href="index.html">Home</a>
-        <a class="login" href="login.html">Log In</a>
+        <a class="active" href="login.html">Log In</a>
         <a href="signup.html">Sign Up</a>
         <a href="browse.html">Browse</a>
         <a href="profile.html">Profile</a>
     </header>
-    <form id="loginForm">
-        <img src="images/flowers.svg" id="flowers">
-            <img src="images/flowers.svg" id="flowers2">
-        <div class="comtainer">
-            <label for="uname" id="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
 
-            <label for="psw" id="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+    <!-- Decorative Background Elements -->
+    <img src="images/flowers.svg" id="flowers">
+    <img src="images/flowers.svg" id="flowers2">
+    
+
+    <!-- Login Form -->
+    <form id="loginForm">
+        <div class="form-section">
+            <label for="uname" class="label">Username</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter Username" required />
+
+            <label for="psw" class="label">Password</label>
+            <input type="password" id="psw" name="psw" placeholder="Enter Password" required />
 
             <button type="submit" class="logIn">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remeber">
-                Remember me
-            </label> 
         </div>
-        
-        <div class="container" style="background-color: #f1f1f1">
-            <button class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot<a href="#"> password?</a></span>
+
+        <div class="form-footer">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
     </form>
 
+    <!-- Login Script -->
     <script>
         document.querySelector('.logIn').addEventListener('click', async function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            
-            const username = document.querySelector('[name="uname"]').value;
-            const password = document.querySelector('[name="psw"]').value;
-    
-            const loginData = {
-                username: username,
-                password: password
-            };
-    
+            event.preventDefault();
+
+            const username = document.getElementById('uname').value;
+            const password = document.getElementById('psw').value;
+
+            const loginData = { username, password };
+
             try {
                 const response = await fetch('http://localhost:8080/api/users/login', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
+                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(loginData)
                 });
-    
+
                 if (response.ok) {
-                    // Successfully logged in
                     alert('Login successful!');
-                    window.location.href = 'index.html'; // Redirect to homepage
+                    window.location.href = 'index.html';
                 } else {
-                    // Invalid username or password
                     alert('Invalid username or password');
                 }
             } catch (error) {
                 alert('An error occurred. Please try again.');
-                console.error('Error during login:', error);
+                console.error('Login error:', error);
             }
         });
+
+        // Optional: Cancel button behavior
+        document.querySelector('.cancelbtn').addEventListener('click', function() {
+            document.getElementById('loginForm').reset();
+        });
     </script>
-    
 </body>
 </html>

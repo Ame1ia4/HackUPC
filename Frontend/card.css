@@ -1,0 +1,302 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#c781e0,#ff9ec5);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Navigation Bar */
+.topnav {
+    background-color: rgba(199, 129, 224, 0.9);
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 0 #9129b1;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 158, 197, 0.8);
+    color: #fff;
+}
+
+.topnav a.active {
+    background-color: #c781e0;
+    color: #fff;
+}
+
+/* Hero Image Section */
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 100%; /* Make it full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+    border-radius: 8px;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    max-width: 80%;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: #fcf6bd;
+    text-shadow: 2px 0px #9129b1;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem; /* Increased font size */
+    color: #ff9ec5;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.hero-text p{
+    text-shadow: none;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+/* Chat with Trader Section */
+.card-section {
+    text-align: center;
+    padding: 2rem;
+    color: #b33abe;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4.5rem;
+    margin-left: 890px;
+    margin-bottom: 5rem;
+    margin-top: 90px;
+}
+
+.card-text {
+    color: #fff;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    margin-left: 450px;
+}
+
+.card-section h2 {
+    color: #ff9ec5;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    background-color: #9129b1;
+}
+
+.card-p {
+  color: #f0f0f0;
+  font-size: 2.0rem;
+  font-family: 'Luckiest Guy', cursive;
+  margin-left: -110px;
+  margin-top: -120px;
+  margin-inline-end: 500px;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    padding: 2rem;
+    color: #fcf6bd;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4.5rem;
+    margin-left: -900px;
+    margin-bottom: -20rem;
+    margin-top: -320px;
+}
+
+.search-section h2 {
+    color: #ff9ec5;
+    font-weight: 600;
+    background-color: #9129b1;
+}
+
+.search-p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Luckiest Guy', cursive;
+  margin-left: -31rem;
+  margin-top: 280px;
+  margin-inline-end: 7px;
+}
+
+
+.card{
+    margin-top: 80px;
+    height: 390px;
+    text-decoration: none;
+    flex-shrink: 0;
+    width: 256px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Footer */
+footer {
+    background-color: #ffd2d3;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #ff9ec5;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Background Decorations (Absolute Positioning) */
+#speech {
+    width: 200px;
+    height: 200px;
+    margin-top: -190px;
+    margin-bottom: 700px;
+    margin-left: 1380px;
+    background-position-x: 30%;
+}
+
+#search {
+    width: 400px;
+    height: 900px;
+    margin-top: -500px;
+    margin-bottom: 700px;
+    margin-left: 1300px;
+    background-position-x: 30%;
+}
+
+
+#flowers {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    margin-top: -510px;
+    margin-left: -460px;
+    background-position-x: 30%;
+    z-index: -2;
+    opacity: 20%;
+}
+
+#flowers2 {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    margin-top: -530px;
+    margin-left: 1000px;
+    background-position-x: 30%;
+    z-index: -2;
+    opacity: 20%;
+}
+
+#confetti {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    margin-top: -410px;
+    margin-left: 660px;
+    background-position-x: 30%;
+    z-index: -2;
+    opacity: 20%;
+}
+
+#confetti2 {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    margin-top: -410px;
+    margin-left: -660px;
+    background-position-x: 30%;
+    z-index: -2;
+    opacity: 20%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-image{
+        height: 200px;
+    }
+    .carousel-item {
+        width: 180px;
+        height: 220px;
+    }
+    /* You might need to adjust the absolute positioned elements here as well */
+        /* Consider using percentage-based values or other responsive units */
+        /* For example: margin-left: 50%; transform: translateX(-50%); */
+    
+    .card-section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-p {
+        margin-left: auto;
+        margin-right: auto;
+        margin-inline-end: auto;
+    }
+    .search-section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .search-p {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-inline-end: auto;
+    }
+    .carousel-section h2 {
+        margin-top: auto;
+    }
+}

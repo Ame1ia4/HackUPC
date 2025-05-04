@@ -342,3 +342,46 @@ h3 {
 }
 
 
+.photo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.pclist {
+    background-color: ##fcf6bd;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.pclist:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pclist img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pclist h1 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0.2rem;
+    color: #b33abe;
+}
+
+.pclist .idol,
+.pclist .grpname,
+.pclist .set {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #202020;
+}

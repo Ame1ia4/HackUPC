@@ -336,11 +336,14 @@ button:hover {
 }
 
 #chess {
+    position: absolute;
     width: 100%;
     margin-top: -1760px;
-    margin-left: -738px;
+    margin-left: -938px;
+    background-position-x: 90%;
     z-index: -1;
 }
+
 input, textarea, select, button {
     border: none;  /* Remove any border */
     outline: none;  /* Remove any outline */

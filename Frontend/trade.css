@@ -110,6 +110,7 @@ body {
   margin-left: -110px;
   margin-top: -120px;
   margin-inline-end: 500px;
+  margin-bottom: -20px;
 }
 
 .card{
@@ -239,7 +240,7 @@ footer {
     opacity: 98%;
     width: 90px;
     height: 90px;
-    margin-left: 420px;
+    margin-left: 820px;
     margin-top: -40px;
     background-position-x: 30%;
 }
@@ -321,6 +322,7 @@ footer {
     .chat-section {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 20px;
     }
     .chat-p {
         margin-left: auto;
@@ -342,7 +344,7 @@ footer {
     }
 }
 
-.browse-btn {
+.trade-btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 24px;
@@ -358,7 +360,15 @@ footer {
 }
 
 
-.browse-btn:hover {
+.trade-btn:hover {
     background-color: #9129b1;
     transform: translateY(-2px);
+}
+
+main {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -470px;
+    
 }

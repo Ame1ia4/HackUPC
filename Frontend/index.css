@@ -436,7 +436,11 @@ footer {
     }
 }
 
-.browse-btn {
+#photo{
+    border-radius: 10px;
+}
+
+.btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 24px;
@@ -452,7 +456,7 @@ footer {
 }
 
 
-.browse-btn:hover {
+.btn:hover {
     background-color: #9129b1;
     transform: translateY(-2px);
 }

@@ -5,13 +5,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background: linear-gradient(#c781e0, #ff9ec5);
-    
+    font-family: 'Luckiest Guy', cursive;
+    overflow-x: hidden;
 }
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -22,14 +22,6 @@ body{
     justify-content: center;
 }
 
-#drop-area{
-    width: 500px;
-    height: auto;
-    background: #fff;
-    text-align: center;
-    border-radius: 20px;
-
-}
 
 img {
     width: 125px;
@@ -50,6 +42,10 @@ img {
     justify-content: center;
     background-position: center;
     background-size: cover;
+}
+
+.form-area {
+    margin-top: -300px;
 }
 
 #img-view img{
@@ -88,7 +84,7 @@ img {
   }
 /* Style the submit button */
 input[type=submit] {
-  width: 15%;
+  width: 70%;
   font-family: 'Luckiest Guy', cursive;
   font-size: 1.7rem;
   background-color: #1de19c;
@@ -97,7 +93,7 @@ input[type=submit] {
   padding: 14px 20px;
   margin: 8px auto;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   display: block; 
   
@@ -123,6 +119,8 @@ input[type=submit]:hover {
     text-align: center;
     letter-spacing: 2px;
     text-decoration: underline;
+    margin-top: 80px;
+    margin-bottom: 0px;
 }
 
 form label {

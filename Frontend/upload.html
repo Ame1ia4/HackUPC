@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="upload.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpop Photocard Trading</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
-<title>Upload</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="top"> 
     <header class="topnav">
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="login.html">Log In</a>
         <a href="signup.html">Sign Up</a>
         <a href="browse.html">Browse</a>
         <a href="profile.html">Profile</a>
     </header>
+
     <main class="container mx-auto px-4 py-8">
         <div class="hero-image">
             <div class="hero-text">
-                <h1>Upload a New Photocard</h1>
+                <h1>Photocards</h1>
+                <p>Buy, Sell, or Trade!</p>
                 <img src="images/cloud.svg" id="cloud">
                 <img src="images/cloud2.svg" id="cloud2">
                 <img src="images/cloud.svg" id="cloud3">
@@ -31,18 +43,18 @@
                 <img src="images/chess.svg" id="chess";>
             </div>
         </div>
-
-    </main>
     <div class="hero">
         <label for="input-file" id="drop-area" >
             <input type="file" accept="image/*" id="input-file"  hidden>
+            <div class="form-area">
             <div id="img-view">
                 <img src="images/126477.png">
                 <p>Drag and drop, or click here<br> to upload image</p>
-                <span>Upload image of photocard</span>
             </div>
         </label>
     </div>
+
+
     <div class="formarea">
         <form id="upload-form">
             <div class="form-group">
@@ -59,13 +71,12 @@
                 <label for="set">Set Name:</label>
             <input type = "text" id="set" name="setname" placeholder="What set is it?">
             </div>
-    
-            
-    
-            <input type="submit" value="Submit">
-           
+
+            <input type="submit" value="Submit">  
         </form>
     </div>
+
+    
     <h1 class="bubble-text">Looking for</h1>
     <div class="formarea">
         <form action="/action_page.php">
@@ -89,6 +100,7 @@
            
         </form>
     </div>
+</div>
     
 
     <script src="script.js"></script>

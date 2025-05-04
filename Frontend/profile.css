@@ -5,7 +5,12 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background: linear-gradient(#c781e0, #ff9ec5);
+    overflow-x: hidden;
+}
 
+.main-content {
+    margin-top: -200px; /* adjust as needed to pull content upward */
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -15,7 +20,6 @@ h3 {
     text-align: center;
     letter-spacing: 2px;
 }
-
 
 .viewprofile{
     width: 100%;
@@ -127,7 +131,7 @@ h3 {
     display: inline-block;
     padding: 12px 28px;
     background-color: #fcf6bd;
-    color: #9129b1;
+    color: #a85cbe;
     font-family: 'Luckiest Guy', cursive;
     font-size: 1.2rem;
     border: none;

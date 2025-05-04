@@ -10,6 +10,7 @@ body, html {
     padding: 0;
     background: linear-gradient(#c781e0, #ff9ec5);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 p{

@@ -52,7 +52,7 @@ label {
 /* Placeholder Styling */
 input::placeholder,
 textarea::placeholder {
-    color: rgb(113, 113, 113);
+    color: rgb(113, 113, 113); 
     font-style: italic;
     font-size: 14px;
     opacity: 0.7;
@@ -71,7 +71,7 @@ textarea::placeholder {
 .group-form input[name=postcode]{
     width: 35%;   /* Same width for text boxes */
     padding: 12px;  /* Added padding for more space inside the input box */
-    margin: 5px 0 22px 0;
+    margin: 5px 0 22px 0;  /* Reduce margin between input fields */
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -98,7 +98,7 @@ textarea::placeholder {
 .form-group select {
     width: 35%;   /* Same width for text boxes */
     padding: 12px;  /* Added padding for more space inside the input box */
-    margin: 5px 0 22px 0;
+    margin: 5px 0 22px 0;  /* Reduce margin between input fields */
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -109,6 +109,7 @@ textarea::placeholder {
 /* Input field focus effect */
 .form-group input[type="text"]:focus, 
 .form-group input[type="password"]:focus {
+    box-shadow: none;
     background-color: #ddd;
     outline: none;
     border-radius: 10px;
@@ -116,6 +117,7 @@ textarea::placeholder {
 
 /* Button Styling */
 button {
+    
     background-color: #14ca8b;
     color: rgb(255, 255, 255);
     padding: 14px 20px;
@@ -147,6 +149,8 @@ button:hover {
 
 .container {
     padding: 16px;
+    margin-top: 2rem; 
+    border: none;
 }
 
 .clearfix {
@@ -199,7 +203,8 @@ button:hover {
     color: #fff;
 }
 
-/* Hero Image */
+
+/* Hero Section Adjustments */
 .hero-image {
     background-size: cover;
     background-position: center;
@@ -208,10 +213,11 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20rem;
+    margin-bottom: 0; /* Remove margin at the bottom to pull it closer to the form */
     border-radius: 8px;
 }
 
+/* Hero Text Adjustments */
 .hero-text {
     text-align: center;
     padding: 20px;
@@ -222,6 +228,22 @@ button:hover {
     font-size: 3rem;
     color: #fcf6bd;
     text-shadow: 2px 0px #9129b1;
+    margin-top: 2rem;  /* Adjust margin to pull down the hero text closer */
+    margin-bottom: 0
+}
+
+#register-form {
+    border: none !important;  /* Remove any border from the form */
+    box-shadow: none !important;  /* Ensure no shadow is causing a border effect */
+    outline: none !important;  /* Ensure no outline appears around the form */
+}
+
+#register-form input, 
+#register-form textarea, 
+#register-form select {
+    border: none !important;  /* Remove border from form elements */
+    outline: none !important;  /* Remove outline from input elements */
+    box-shadow: none !important;  /* Remove any shadow from form fields */
 }
 
 .hero-text h1 {
@@ -318,4 +340,23 @@ button:hover {
     margin-top: -1760px;
     margin-left: -738px;
     z-index: -1;
+}
+input, textarea, select, button {
+    border: none;  /* Remove any border */
+    outline: none;  /* Remove any outline */
+    box-shadow: none;  /* Remove any shadow around input */
+}
+
+/* Remove outline from buttons and form elements */
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.hero-image {
+    margin-bottom: 0;  /* Remove margin */
+}
+
+.hero-text {
+    margin-bottom: 0;  /* Remove margin */
 }

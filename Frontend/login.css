@@ -132,6 +132,7 @@ input[type=password] {
     box-sizing: border-box;
     font-size: 40px;
     border-radius: 8px;
+    opacity: 70%;
 }
 
 button {
@@ -149,7 +150,6 @@ button {
     border-radius: 25px;
     display: block;
     text-align: center;margin-bottom: 30px;
-
 }
 
 button:hover {
@@ -161,14 +161,15 @@ button:hover {
     background-color: #f44336;
     margin-top: 20px;
     margin-left: -125px;
-    margin-bottom: 0; /* Added margin-bottom: 0; to remove extra space */
+    margin-bottom: -70px; /* Added margin-bottom: 0; to remove extra space */
 }
 
 
 
 span.psw {
     margin-left: 0px;
-    padding-top: 16px;
+    padding-top: 40px;
+    margin-top: 90px;
 }
 
 @media screen and (max-width: 300px) {
@@ -176,5 +177,29 @@ span.psw {
         display: block;
         float: none;
     }
+}
+
+#flowers {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    margin-top: -500px;
+    margin-left: -900px;
+    background-position-x: 30%; 
+    z-index: -2;
+    opacity: 20%;
+}
+
+
+#flowers2 {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    margin-top: -510px;
+    margin-left: 900px;
+    background-position-x: 30%; 
+    z-index: -2;
+    opacity: 20%;
+  
 }
 

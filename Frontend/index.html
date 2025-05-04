@@ -63,23 +63,56 @@
         </section>
 
         <section class="carousel-section">
-            <h2 class="text-xl font-semibold text-a1ffde text-center mb-4">Popular Group PhotoCards</h2> <div class="flex overflow-x-auto space-x-4 p-4">
-                <div class="card"><a href="./card.html"><img src="/images/ateez.jpg"></a>
+            <h2 class="text-xl font-semibold text-a1ffde text-center mb-4">Popular Group PhotoCards</h2>
+            <div class="flex overflow-x-auto space-x-4 p-4">
+                <div class="card">
+                    <a href="./card.html?image=ateez.jpg" data-image="/images/ateez.jpg">
+                        <img src="/images/ateez.jpg">
+                    </a>
                 </div>
-                <div class="card"><img src="/images/aespa.jpg">
+                <div class="card">
+                    <a href="./card.html?image=aespa.jpg" data-image="/images/aespa.jpg">
+                        <img src="/images/aespa.jpg">
+                    </a>
                 </div>
-                <div class="card"><img src="/images/bts.jpg">
+                <div class="card">
+                    <a href="./card.html?image=bts.jpg" data-image="/images/bts.jpg">
+                        <img src="/images/bts.jpg">
+                    </a>
                 </div>
-                <div class="card"><img src="/images/g-idle.jpg">
+                <div class="card">
+                    <a href="./card.html?image=g-idle.jpg" data-image="/images/g-idle.jpg">
+                        <img src="/images/g-idle.jpg">
+                    </a>
                 </div>
-                <div class="card"><img src="/images/stray.jpg">
+                <div class="card">
+                    <a href="./card.html?image=stray.jpg" data-image="/images/stray.jpg">
+                        <img src="/images/stray.jpg">
+                    </a>
                 </div>
-                <div class="card"><img src="/images/exo.jpg">
+                <div class="card">
+                    <a href="./card.html?image=exo.jpg" data-image="/images/exo.jpg">
+                        <img src="/images/exo.jpg">
+                    </a>
                 </div>
-                <div class="card"><img src="/images/ssera.jpg">
+                <div class="card">
+                    <a href="./card.html?image=ssera.jpg" data-image="/images/ssera.jpg">
+                        <img src="/images/ssera.jpg">
+                    </a>
                 </div>
             </div>
         </section>
+        <script>
+            const cards = document.querySelectorAll('.card a');
+    
+            cards.forEach(card => {
+                card.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    const imageSrc = this.getAttribute('data-image');
+                    window.location.href = `./card.html?image=${encodeURIComponent(imageSrc)}`;
+                });
+            });
+        </script>
     </main>
 
     <footer class="bg-ffd2d3 text-gray-800 text-center py-3 rounded-t-lg shadow-md">

@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "🟢 Starting Spring Boot backend..."
+echo "🟢 Starting photocard-backend (port 8080)..."
 cd Backend/photocard-backend
 ./mvnw spring-boot:run &
 
-sleep 4
+echo "🟢 Starting registration backend (port 8081)..."
+cd ../../Registration
+./mvnw spring-boot:run &
 
-echo "🟢 Starting frontend server on http://localhost:8000"
-cd ../../Frontend
-python3 -m http.server
+echo "✅ Both backends are now running!"

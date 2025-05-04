@@ -61,7 +61,7 @@ async function fetchCards() {
   window.addEventListener("DOMContentLoaded", async () => {
     try {
       const cards = await fetchCards();
-      console.log("Fetched cards:", cards); // 👈 add this!
+      console.log("Fetched cards:", cards);
       renderCards(cards);
       setupSearch(cards);
     } catch (err) {

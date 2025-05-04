@@ -119,6 +119,7 @@ button:hover {
 }
 
 .logIn {
+    margin-top: 80px;
     background-color: #04AA6D;
     color: white;
 }
@@ -133,6 +134,7 @@ button:hover {
     padding: 10px 20px;
     display: block;
     margin: 20px auto; /* Centers the button */
+    margin-bottom: 160px;
 }
 
 /* Footer Section */

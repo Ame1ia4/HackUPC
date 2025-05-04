@@ -47,16 +47,16 @@ public class PhotocardController {
 
         // Create photocard
         Photocard card = new Photocard();
-        card.setArtistName(info.artistName);
-        card.setGroupName(info.groupName);
-        card.setSet(info.set);
+        card.setArtistName(info.getArtistName());
+        card.setGroupName(info.getGroupName());
+        card.setSet(info.getSet());
         card.setImagePath(filename);
         card.setUploadedAt(LocalDateTime.now());
 
         // Add looking for
         List<LookingFor> lookingForList = new ArrayList<>();
-        if (info.lookingForList != null) {
-            for (LookingForDTO dto : info.lookingForList) {
+        if (info.getLookingForList() != null) {
+            for (LookingForDTO dto : info.getLookingForList()) {
                 LookingFor lf = new LookingFor();
                 lf.setArtistName(dto.artistName);
                 lf.setGroupName(dto.groupName);

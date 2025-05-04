@@ -85,32 +85,25 @@ body {
 }
 
 /* Chat with Trader Section */
-.card-section {
+.chat-section {
     text-align: center;
     padding: 2rem;
     color: #b33abe;
     font-family: 'Luckiest Guy', cursive;
     font-size: 4.5rem;
-    margin-left: 890px;
-    margin-bottom: 5rem;
-    margin-top: 50px;
+    margin-left: -630px;
+    margin-bottom: 20px;
+    margin-top: -90px;
 }
 
-.card-text {
-    color: #fff;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 40px;
-    margin-left: 450px;
-}
-
-.card-section h2 {
+.chat-section h2 {
     color: #ff9ec5;
     margin-bottom: 1rem;
     font-weight: 600;
     background-color: #9129b1;
 }
 
-.card-p {
+.chat-p {
   color: #f0f0f0;
   font-size: 2.0rem;
   font-family: 'Luckiest Guy', cursive;
@@ -119,42 +112,12 @@ body {
   margin-inline-end: 500px;
 }
 
-/* Search Section */
-.search-section {
-    text-align: center;
-    padding: 2rem;
-    color: #fcf6bd;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 4.5rem;
-    margin-left: -900px;
-    margin-bottom: -20rem;
-    margin-top: -320px;
-}
-
-.search-section h2 {
-    color: #ff9ec5;
-    font-weight: 600;
-    background-color: #9129b1;
-}
-
-.search-p {
-  color: #fff;
-  font-size: 2rem;
-  font-family: 'Luckiest Guy', cursive;
-  margin-left: -31rem;
-  margin-top: 280px;
-  margin-inline-end: 7px;
-}
-
-
 .card{
-    margin-top: -550px;
-    margin-left: 400px;
-    margin-bottom: 50px;
-    height: 590px;
+    margin-top: 80px;
+    height: 390px;
     text-decoration: none;
     flex-shrink: 0;
-    width: 456px;
+    width: 256px;
     background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -162,12 +125,6 @@ body {
     align-items: center;
     justify-content: center;
     color: #718096;
-}
-
-#card-image{
-    width: 400px;
-    height: 520px;
-    border-radius: 8px;
 }
 
 
@@ -187,20 +144,114 @@ footer {
     width: 200px;
     height: 200px;
     margin-top: -190px;
-    margin-bottom: 700px;
-    margin-left: 1380px;
+    margin-bottom: 70px;
+    margin-left: 1080px;
     background-position-x: 30%;
 }
 
-#search {
-    width: 400px;
-    height: 900px;
-    margin-top: -500px;
-    margin-bottom: 700px;
-    margin-left: 1300px;
+#cloud{
+    position: absolute;
+    opacity: 90%;
+    width: 300px;
+    height: 300px;
+    margin-top: -80px;
+    margin-left: 660px;
     background-position-x: 30%;
 }
 
+#cloud2{
+    position: absolute;
+    opacity: 90%;
+    width: 300px;
+    height: 300px;
+    margin-top: -80px;
+    margin-left: -460px;
+    background-position-x: 30%;
+}
+
+#cloud3{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    margin-top: -200px;
+    margin-left: 800px;
+    background-position-x: 70%;
+}
+
+#cloud4{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    margin-top: -200px;
+    margin-left: -800px;
+    background-position-x: 70%;
+}
+
+#cloud5{
+    position: absolute;
+    opacity: 90%;
+    width: 200px;
+    height: 300px;
+    margin-top: -470px;
+    margin-left: 550px;
+    background-position-x: 30%;
+}
+
+#cloud6{
+    position: absolute;
+    opacity: 90%;
+    width: 200px;
+    height: 300px;
+    margin-top: -370px;
+    margin-left: -550px;
+    background-position-x: 30%;
+}
+
+#stars{
+    position: absolute;
+    width: 170px;
+    height: 80px;
+    margin-top: -300px;
+    margin-left: -360px;
+    background-position-x: 30%;
+}
+
+#stars2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-left: 600px;
+    margin-top: -200px;
+    background-position-x: 30%;
+}
+
+#cards{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-left: -120px;
+    margin-top: -260px;
+    background-position-x: 30%;
+}
+
+#cards2{
+    position: absolute;
+    opacity: 98%;
+    width: 90px;
+    height: 90px;
+    margin-left: 420px;
+    margin-top: -40px;
+    background-position-x: 30%;
+}
+
+#chess{
+    position: absolute;
+    width: 100%;
+    margin-top: -1760px;
+    margin-left: -738px;
+    background-position-x: -40%;
+    z-index: -1;
+}
 
 #flowers {
     position: absolute;
@@ -213,31 +264,11 @@ footer {
     opacity: 20%;
 }
 
-.btn{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 1.5rem;
-    font-family: 'Luckiest Guy', cursive;
-    color: white;
-    background-color: #b755c0;
-    border: none;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-    background-color: #9129b1;
-    transform: translateY(-2px);
-}
-
 #flowers2 {
     position: absolute;
     width: 900px;
     height: 900px;
-    margin-top: -530px;
+    margin-top: -510px;
     margin-left: 1000px;
     background-position-x: 30%;
     z-index: -2;
@@ -287,11 +318,11 @@ footer {
         /* Consider using percentage-based values or other responsive units */
         /* For example: margin-left: 50%; transform: translateX(-50%); */
     
-    .card-section {
+    .chat-section {
         margin-left: auto;
         margin-right: auto;
     }
-    .card-p {
+    .chat-p {
         margin-left: auto;
         margin-right: auto;
         margin-inline-end: auto;
@@ -309,4 +340,25 @@ footer {
     .carousel-section h2 {
         margin-top: auto;
     }
+}
+
+.browse-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    background-color: #b33abe;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.browse-btn:hover {
+    background-color: #9129b1;
+    transform: translateY(-2px);
 }

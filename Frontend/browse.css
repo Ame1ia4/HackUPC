@@ -1,10 +1,20 @@
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    padding: 2rem;
-  }
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#c781e0,#ff9ec5);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
   
   .card1 {
     background: #fff;
@@ -35,22 +45,6 @@
     color: #666;
   }
   
-  /* Global Styles */
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(#c781e0,#ff9ec5);
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden; 
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 /* Top Navigation Bar */
 .topnav {
@@ -176,10 +170,11 @@ margin-left: -31rem;
 margin-top: 280px;
 margin-inline-end: 7px;
 }
+/* ... other styles ... */
 
-/* Picture Card Carousel Section */
 .carousel-section {
   padding: 2rem 0;
+  text-align: center; /* Center the carousel horizontally */
 }
 
 .carousel-section h2 {
@@ -194,15 +189,18 @@ margin-inline-end: 7px;
 }
 
 .carousel {
-  display: flex;
+  display: inline-flex; /* Use inline-flex to make it inline and a flex container */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 0 rem;
   margin-bottom: 2rem;
+  /* Remove auto margins if present and interfering with inline behavior */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-item {
-  flex: 0 8 auto;
+  flex: 0 0 auto;
   width: 200px;
   height: 250px;
   margin-right: 1rem;
@@ -221,15 +219,15 @@ margin-inline-end: 7px;
   margin-top: 80px;
   height: 390px;
   text-decoration: none;
-  flex-shrink: 0; 
-  width: 256px; 
+  flex-shrink: 0;
+  width: 256px;
   background-color: #fff;
-  border-radius: 0.5rem; 
+  border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
-  color: #718096; 
+  color: #718096;
 }
 
 .carousel::-webkit-scrollbar {
@@ -251,26 +249,45 @@ margin-inline-end: 7px;
   background: #aaa;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .topnav a {
-      float: none;
-      display: block;
-      text-align: center;
-  }
-  .hero-text h1 {
-      font-size: 2rem;
-  }
-  .hero-image{
-      height: 200px;
-  }
-  .carousel-item {
-      width: 180px;
-      height: 220px;
-  }
+.group{
+  margin-top: 70px;
 }
 
+.group p {
+  margin-left: -940px;
+  color: #fff;
+  font-size: 30px;
+  font-family:'Luckiest Guy', cursive;
+  margin-bottom: -20px;
+}
 
+.idol {
+margin-left: 490px;
+margin-top: -3330px;
+}
+.idol p {
+  margin-left: -480px;
+  color: #fff;
+  font-size: 30px;
+  font-family:'Luckiest Guy', cursive;
+  margin-bottom: -20px;
+}
+
+.company {
+  margin-left: 490px;
+  margin-top: -2870px;
+  }
+
+  .company p {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-family:'Luckiest Guy', cursive;
+    margin-bottom: -20px;
+  }
+  
+
+/* ... other styles ... */
 
 #cloud{
   position: absolute;
@@ -425,4 +442,77 @@ input[type=text] {
   margin-top: -290px; /* Adjust spacing below the header */
   margin-bottom: 70px;
 
+}
+
+.carousel-section {
+  padding: 2rem 0;
+}
+
+.carousel-section h2 {
+  font-size: 3.8rem;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 2px 0 #f33e86;
+  color: #fcf6bd;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Changed flex-basis to 200px for consistency */
+  width: 200px;
+  height: 250px;
+  margin-right: 1rem;
+  border-radius: 8px;
+  background-image: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #888;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+  margin-top: 80px;
+  height: 390px;
+  text-decoration: none;
+  flex-shrink: 0;
+  width: 256px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718096;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }

@@ -409,11 +409,9 @@ footer {
         height: 220px;
     }
     /* You might need to adjust the absolute positioned elements here as well */
-    #speech, #search, #cloud, #cloud2, #cloud3, #cloud4, #cloud5, #cloud6,
-    #stars, #stars2, #cards, #cards2, #chess, #flowers, #flowers2, #confetti, #confetti2 {
         /* Consider using percentage-based values or other responsive units */
         /* For example: margin-left: 50%; transform: translateX(-50%); */
-    }
+    
     .chat-section {
         margin-left: auto;
         margin-right: auto;

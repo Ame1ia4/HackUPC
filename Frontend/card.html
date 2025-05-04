@@ -26,19 +26,30 @@
         <a href="browse.html">Browse</a>
     </header>
 
-        <section class="text-center py-6">
-            <img src="images/flowers.svg" id="flowers">
-            <img src="images/flowers.svg" id="flowers2">
-            <h2 class="card-section">Card Info</h2><div class="card-text"> 
+    <section class="text-center py-6">
+        <img src="images/flowers.svg" id="flowers">
+        <img src="images/flowers.svg" id="flowers2">
+        <h2 class="card-section">Card Info</h2>
+        <div class="card-text">
             <p>Idol: </p>
             <p>Group: </p>
             <p>Company: </p>
             <p>Origin: </p>
             <p>Rarity: </p>
-            </div>
-            <div class="card"><a href="./card.html"><img src="/images/ateez.jpg"></a>
-            </div>
-        </section>
+        </div>
+        <div class="card">
+            <img src="" id="card-image">  </div>
+    </section>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageSrc = urlParams.get('image');
+        const cardImage = document.getElementById('card-image');
+
+        if (imageSrc) {
+            cardImage.src = decodeURIComponent(imageSrc); // Set the src
+        }
+    </script>
     
     
     <footer class="bg-ffd2d3 text-gray-800 text-center py-3 rounded-t-lg shadow-md">

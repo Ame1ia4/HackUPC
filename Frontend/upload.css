@@ -91,8 +91,8 @@ input[type=submit] {
   width: 15%;
   font-family: 'Luckiest Guy', cursive;
   font-size: 1.7rem;
-  background-color: #a1ffde;
-  color: #000000;
+  background-color: #1de19c;
+  color: #ffffff;
   text-align: center;
   padding: 14px 20px;
   margin: 8px auto;
@@ -105,7 +105,7 @@ input[type=submit] {
 
 /* Add a background color to the submit button on mouse-over */
 input[type=submit]:hover {
-  background-color: #42f0b3;
+  background-color: #10855c;
 }
 
 .formarea {
@@ -128,5 +128,33 @@ input[type=submit]:hover {
 form label {
     font-family: 'Luckiest Guy', cursive;
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
+}
+.topnav {
+    background-color: rgba(199, 129, 224, 0.9);
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 0 #9129b1;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 158, 197, 0.8);
+    color: #fff;
+}
+
+.topnav a.active {
+    background-color: #c781e0;
+    color: #fff;
 }

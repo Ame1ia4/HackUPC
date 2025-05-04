@@ -17,6 +17,25 @@
         <a href="browse.html">Browse</a>
         <a href="profile.html">Profile</a>
     </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Sign Up</h1>
+                <img src="images/cloud.svg" id="cloud">
+                <img src="images/cloud2.svg" id="cloud2">
+                <img src="images/cloud.svg" id="cloud3">
+                <img src="images/cloud2.svg" id="cloud4">
+                <img src="images/cloud.svg" id="cloud5">
+                <img src="images/cloud2.svg" id="cloud6">
+                <img src="images/stars.svg" id="stars">
+                <img src="images/stars2.svg" id="stars2">
+                <img src="images/cards.svg" id="cards";>
+                <img src="images/cards2.svg" id="cards2";>
+                <img src="images/chess.svg" id="chess";>
+            </div>
+        </div>
+
+    </main>
 
     <!-- Star Background -->
     <div class="stars-wrapper">
@@ -32,35 +51,56 @@
                     <p class="bubblewords">Please complete this form to create an account</p>
                 </div>
 
-                <label for="fullname"><b>Full Name</b></label>
-                <input type="text" placeholder="Enter your full name" name="fullname" required>
+                <div class="form-group">
+                    <label for="fullname"><b>Full Name</b></label>
+                    <input type="text" placeholder="Enter your full name" name="fullname" required>
+                </div>
                 
-                <label for="email"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required>
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-                <label>Address Line One</label>
-                <input type="text" placeholder="Address Line One" name="addressone" required>
+                <div class="form-group">
+                    <label for="email"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                </div>
                 
-                <label>Address Line Two</label>
-                <input type="text" placeholder="Address Line Two" name="addresstwo" required>
-
-                <label>Apartment No/ Building No</label>
-                <input type="text" placeholder="Building No" name="buildingno">
-
-                <label>City/Region</label>
-                <input type="text" placeholder="Region" name="region" required>
+                <div class="form-group">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                </div>
                 
-                <label>Post Code</label>
-                <input type="text" placeholder="Postcode" name="postcode" required>
+                <div class="form-group">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Address Line One</label>
+                    <input type="text" placeholder="Address Line One" name="addressone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Address Line Two</label>
+                    <input type="text" placeholder="Address Line Two" name="addresstwo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Apartment No/ Building No</label>
+                    <input type="text" placeholder="Building No" name="buildingno">
+                </div>
+                
+                <div class="form-group">
+                    <label>City/Region</label>
+                    <input type="text" placeholder="Region" name="region" required>
+                </div>
+                
+                <div class="group-form">
+                    <label>Post Code</label>
+                    <input type="text" placeholder="Postcode" name="postcode" required>
+                </div>
+                
                 <label>
                     <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px"> Remember Me
                 </label>
@@ -95,7 +135,7 @@
                 }
             };
     
-            fetch("http://localhost:8080/api/users/register", {
+            fetch("http://localhost:8081/api/users/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
